@@ -21,7 +21,7 @@ To encrypt a video, you'll need the path to the video file, an encryption key, a
 const videoPath = "./demo.mp4";
 const encryptionKey = "your-secret-key";
 const encryptedFilePath = "encrypted-video";
-video.videoEncrypt(videoPath, encryptionKey, encryptedFilePath);
+video.videoEncrypt(videoPath, encryptedFilePath, encryptionKey);
 ```
 
 ## Decrypting an Encrypted Video
@@ -34,7 +34,7 @@ To decrypt an encrypted video, you'll need the path to the encrypted video file,
 const encryptedFilePath = "encrypted-video";
 const encryptionKey = "your-secret-key";
 const decryptedVideoPath = "decrypted-video";
-video.videoDecrypt(encryptedFilePath, encryptionKey, decryptedVideoPath);
+video.videoDecrypt(encryptedFilePath, decryptedVideoPath, encryptionKey);
 ```
 
 ## Author
